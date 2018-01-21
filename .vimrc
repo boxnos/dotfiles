@@ -7,10 +7,11 @@ set viminfo+=n~/.vim/.viminfo
 " history
 set history=10000
 
-" commandline-mode behavior
+" commandline-mode behavior {{{
 set wildmode=longest,full
 
 cnoremap <C-P> <UP>
 cnoremap <C-N> <Down>
 cnoremap <Up> <C-P>
 cnoremap <Up> <C-N>
+" }}}
