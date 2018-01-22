@@ -23,6 +23,8 @@ zstyle :compinstall filename '${ZDOTDIR}/.zshrc'
 autoload -Uz compinit
 compinit
 
+setopt globdots
+
 # Prompt
 PROMPT="%% "
 RPROMPT="[%~]"
