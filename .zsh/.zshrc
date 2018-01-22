@@ -5,6 +5,7 @@ HISTFILE=${ZDOTDIR}/.zsh-history
 HISTSIZE=1000
 SAVEHIST=10000
 setopt hist_ignore_all_dups
+setopt extended_history
 setopt share_history
 
 
