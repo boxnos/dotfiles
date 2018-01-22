@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	name = boxnos
+	email = boxnos@yahoo.com
+[core]
+	editor = vim
