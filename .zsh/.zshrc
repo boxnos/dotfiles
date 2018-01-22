@@ -1,6 +1,6 @@
 bindkey -e
 
-# history
+# History
 HISTFILE=${ZDOTDIR}/.zsh-history
 HISTSIZE=1000
 SAVEHIST=10000
@@ -17,14 +17,13 @@ bindkey "^N" history-beginning-search-forward-end
 bindkey "^[p" history-beginning-search-backward
 bindkey "^[n" history-beginning-search-forward
 
-# The following lines were added by compinstall
+# Completion
 zstyle :compinstall filename '${ZDOTDIR}/.zshrc'
 
 autoload -Uz compinit
 compinit
-# End of lines added by compinstall
 
-# prompt
+# Prompt
 PROMPT="%% "
 RPROMPT="[%~]"
 setopt transient_rprompt
