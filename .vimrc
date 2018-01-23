@@ -39,3 +39,14 @@ set statusline=[*%n]\ %f\ %{'['.(&fenc!=''?&fenc:'?').'-'.&ff.']'}%y%r%h%w%m%=
 " %< Where to truncate line if too long.
 set statusline+=%4l/%4L%<
 " }}}
+
+" indent
+aug Indent
+  au!
+  au Filetype * setl cindent ts=8 sw=2 sts=2 et
+  au Filetype * setl cinoptions=0:,(0                             " for close ):
+  au Filetype c,cpp,java,markdown setl cindent ts=8 sw=4 sts=4 et
+  au Filetype lisp,scheme setl cindent& ts=8 sw=2 sts=2 et
+  au Filetype make setl ts=8 sw=8 sts=8 noet
+  au BufRead,BufNewFile *.gradle set filetype=groovy
+aug END
