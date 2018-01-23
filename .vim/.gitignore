@@ -1,2 +1,8 @@
-.viminfo
-.netrwhist
+# ignore all
+*
+
+# sub directory
+!*/
+
+# white list
+!.gitignore
