@@ -61,4 +61,14 @@ augroup END
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'w0ng/vim-hybrid'
 call plug#end()
+
+" color
+set t_Co=256
+syntax enable
+set listchars=tab:>-,eol:<
+set list
+let g:lisp_rainbow = 1
+
+colorscheme hybrid
