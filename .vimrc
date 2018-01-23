@@ -49,12 +49,12 @@ augroup auto_comment_off
 augroup END
 
 " indent
-aug Indent
-  au!
-  au Filetype * setl cindent ts=8 sw=2 sts=2 et
-  au Filetype * setl cinoptions=0:,(0                             " for close ):
-  au Filetype c,cpp,java,markdown setl cindent ts=8 sw=4 sts=4 et
-  au Filetype lisp,scheme setl cindent& ts=8 sw=2 sts=2 et
-  au Filetype make setl ts=8 sw=8 sts=8 noet
-  au BufRead,BufNewFile *.gradle set filetype=groovy
-aug END
+augroup Indent
+  autocmd!
+  autocmd Filetype * setl cindent ts=8 sw=2 sts=2 et
+  autocmd Filetype * setl cinoptions=0:,(0                             " for close ):
+  autocmd Filetype c,cpp,java,markdown setl cindent ts=8 sw=4 sts=4 et
+  autocmd Filetype lisp,scheme setl cindent& ts=8 sw=2 sts=2 et
+  autocmd Filetype make setl ts=8 sw=8 sts=8 noet
+  autocmd BufRead,BufNewFile *.gradle set filetype=groovy
+augroup END
