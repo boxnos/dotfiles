@@ -58,3 +58,7 @@ augroup Indent
   autocmd Filetype make setl ts=8 sw=8 sts=8 noet
   autocmd BufRead,BufNewFile *.gradle set filetype=groovy
 augroup END
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+call plug#end()
