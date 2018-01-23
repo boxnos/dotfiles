@@ -40,6 +40,14 @@ set statusline=[*%n]\ %f\ %{'['.(&fenc!=''?&fenc:'?').'-'.&ff.']'}%y%r%h%w%m%=
 set statusline+=%4l/%4L%<
 " }}}
 
+" Auto comment off
+" See http://d.hatena.ne.jp/hyuki/20140122/vim
+augroup auto_comment_off
+  autocmd!
+  autocmd BufEnter * setlocal formatoptions-=r
+  autocmd BufEnter * setlocal formatoptions-=o
+augroup END
+
 " indent
 aug Indent
   au!
