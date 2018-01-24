@@ -74,3 +74,4 @@ set list
 let g:lisp_rainbow = 1
 
 colorscheme hybrid
+highlight MatchParen ctermfg=lightgray  ctermbg=black
