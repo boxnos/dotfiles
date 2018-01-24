@@ -8,4 +8,4 @@ deploy :
 	./setup/deploy.sh --deploy $(DOTFILES)
 
 clean :
-	@$(foreach val, $(DOTFILES), echo clean $(val); rm $(HOME)/$(val);)	
+	@$(foreach val, $(DOTFILES), echo clean $(val); unlink $(HOME)/$(val);)
