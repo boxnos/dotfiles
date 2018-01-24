@@ -61,6 +61,7 @@ augroup END
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-surround'
 Plug 'w0ng/vim-hybrid'
 call plug#end()
 
