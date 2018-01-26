@@ -62,7 +62,7 @@ augroup Indent
   autocmd Filetype * setl cinoptions=0:,(0                             " for close ):
   autocmd Filetype c,cpp,java,markdown setl cindent ts=8 sw=4 sts=4 et
   autocmd Filetype lisp,scheme setl cindent& ts=8 sw=2 sts=2 et
-  autocmd Filetype make setl ts=8 sw=8 sts=8 noet
+  autocmd Filetype make,changelog setl ts=8 sw=8 sts=8 noet
   autocmd BufRead,BufNewFile *.gradle set filetype=groovy
 augroup END
 
