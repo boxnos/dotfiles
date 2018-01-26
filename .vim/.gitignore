@@ -4,6 +4,7 @@
 # sub directory
 !*/
 
-# white list
 plugged/*
+
+# white list
 !.gitignore
