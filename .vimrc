@@ -76,3 +76,17 @@ let g:lisp_rainbow = 1
 
 colorscheme hybrid
 highlight MatchParen ctermfg=lightgray  ctermbg=black
+
+" Quickfix
+function! s:Open_quickfix_window()
+  for e in filter(getqflist(), 'v:val.valid != 0')
+    copen
+    return
+  endfor
+  cclose
+endfunction
+
+augroup QuickFix
+  autocmd!
+  autocmd QuickfixCmdPost *grep*,make call s:Open_quickfix_window()
+augroup END
