@@ -8,3 +8,5 @@ plugged/*
 
 # white list
 !.gitignore
+
+!ftplugin/*
