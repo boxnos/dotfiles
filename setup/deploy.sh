@@ -16,6 +16,19 @@ deploy () {
   done
 }
 
+clean () {
+  for file in $@
+  do
+    link=$HOME/$file
+    if [ -L $link ]
+    then
+      unlink $link
+      echo "unlink. $link"
+    else
+      echo "skiped. $link"
+    fi
+  done
+}
 
 while [ $# -gt 0 ]
 do
@@ -23,6 +36,11 @@ do
   --deploy )
     shift
     deploy $@
+    exit 0
+    ;;
+  --clean )
+    shift
+    clean $@
     exit 0
     ;;
   * )
