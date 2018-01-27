@@ -23,6 +23,9 @@ cnoremap <Up> <C-P>
 cnoremap <Up> <C-N>
 " }}}
 
+" key behavior
+set notimeout
+
 " status line {{{
 set showcmd
 set cmdheight=1
