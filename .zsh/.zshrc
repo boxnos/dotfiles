@@ -29,3 +29,7 @@ setopt globdots
 PROMPT="%% "
 RPROMPT="[%~]"
 setopt transient_rprompt
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
