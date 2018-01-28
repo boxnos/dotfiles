@@ -93,3 +93,5 @@ augroup QuickFix
   autocmd!
   autocmd QuickfixCmdPost *grep*,make call s:Open_quickfix_window()
 augroup END
+
+let &errorformat = 'make:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
