@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/matchit.zip'
 Plug 'w0ng/vim-hybrid'
+Plug 'jpalardy/vim-slime'
 call plug#end()
 
 " swap
@@ -95,3 +96,6 @@ augroup QuickFix
 augroup END
 
 let &errorformat = 'make:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
+
+" Slim-vim
+let g:slime_target = "vimterminal"
