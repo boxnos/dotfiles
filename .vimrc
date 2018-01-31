@@ -71,7 +71,7 @@ augroup Indent
   autocmd BufRead,BufNewFile *.gradle set filetype=groovy
 augroup END
 
-" color
+" Color
 set t_Co=256
 syntax enable
 set listchars=tab:>-,eol:<
