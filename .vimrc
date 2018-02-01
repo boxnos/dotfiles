@@ -6,12 +6,15 @@ Plug 'w0ng/vim-hybrid'
 Plug 'jpalardy/vim-slime'
 call plug#end()
 
+" Directory Settings
 " swap
 set directory=~/.vim/tmp
 " backup
 set backupdir=~/.vim/tmp
 " viminfo
+set viminfo&
 set viminfo+=n~/.vim/.viminfo
+
 " history
 set history=10000
 
