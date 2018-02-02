@@ -98,6 +98,7 @@ augroup QuickFix
   autocmd QuickfixCmdPost *grep*,make call s:Open_quickfix_window()
 augroup END
 
+set errorformat&
 let &errorformat = 'make:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
 
 " Slim-vim
