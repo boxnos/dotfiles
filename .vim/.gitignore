@@ -1,12 +1,5 @@
-# ignore all
-*
+.netrwhist
 
-# sub directory
-!*/
-
+autoload/plug.vim
 plugged/*
-
-# white list
-!.gitignore
-
-!ftplugin/*
+tmp/*
