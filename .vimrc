@@ -13,7 +13,7 @@ set directory=~/.vim/tmp
 set backupdir=~/.vim/tmp
 " viminfo
 set viminfo&
-set viminfo+=n~/.vim/.viminfo
+set viminfo+=n~/.vim/tmp/.viminfo
 
 " history
 set history=10000
