@@ -29,6 +29,8 @@ cnoremap <Up> <C-N>
 
 " key behavior
 set notimeout
+set ttimeout
+set timeoutlen=200
 
 " status line {{{
 set showcmd
