@@ -15,10 +15,10 @@ set backupdir=~/.vim/tmp
 set viminfo&
 set viminfo+=n~/.vim/tmp/.viminfo
 
-" history
+" History
 set history=10000
 
-" commandline-mode behavior {{{
+" Commandline mode behavior {{{
 set wildmode=longest,full
 
 cnoremap <C-P> <UP>
@@ -27,12 +27,12 @@ cnoremap <Up> <C-P>
 cnoremap <Up> <C-N>
 " }}}
 
-" key behavior
+" Key behavior
 set notimeout
 set ttimeout
 set timeoutlen=200
 
-" status line {{{
+" Status line {{{
 set showcmd
 set cmdheight=1
 set laststatus=2
