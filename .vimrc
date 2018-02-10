@@ -32,6 +32,9 @@ set notimeout
 set ttimeout
 set timeoutlen=200
 
+" Line Numbers
+set number
+
 " Status line {{{
 set showcmd
 set cmdheight=1
