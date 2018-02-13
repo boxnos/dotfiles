@@ -15,6 +15,10 @@ set backupdir=~/.vim/tmp
 set viminfo&
 set viminfo+=n~/.vim/tmp/.viminfo
 
+" Buffer
+set hidden
+set confirm
+
 " History
 set history=10000
 
