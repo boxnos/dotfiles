@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/matchit.zip'
 Plug 'w0ng/vim-hybrid'
+Plug 'tyru/open-browser.vim'
+Plug 'thinca/vim-quickrun'
 Plug 'jpalardy/vim-slime'
 call plug#end()
 
@@ -112,3 +114,15 @@ let &errorformat = 'make:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
 
 " Slim-vim
 let g:slime_target = "vimterminal"
+
+" open-browser
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
+
+let g:quickrun_config = {}
+let g:quickrun_config.mob= {
+      \ 'type': 'markdown/pandoc',
+      \ 'cmdopt': '-s -f markdown',
+      \ 'outputter': 'browser'
+\}
