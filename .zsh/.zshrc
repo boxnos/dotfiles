@@ -32,5 +32,6 @@ RPROMPT="[%~]"
 setopt transient_rprompt
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+export ANYENV_ROOT=$HOME/.config/anyenv
+export PATH="$ANYENV_ROOT/bin:$PATH"
+eval "$(anyenv init -)"
