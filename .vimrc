@@ -127,7 +127,7 @@ nnoremap \r :write<CR>:QuickRun -mode n<CR>
 " for pandoc -> LiveReloadX -> chrome
 augroup pandoc
   autocmd!
-  autocmd Filetype markdown nmap \o :execute "OpenBrowser http://localhost:35729/" . expand("%:r") . ".html"<CR>
+  autocmd Filetype markdown,html nmap \o :execute "OpenBrowser http://localhost:35729/" . expand("%:r") . ".html"<CR>
 augroup END
 let g:quickrun_config = {}
 let g:quickrun_config.markdown= {
