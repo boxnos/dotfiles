@@ -6,6 +6,8 @@ Plug 'w0ng/vim-hybrid'
 Plug 'tyru/open-browser.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'jpalardy/vim-slime'
+
+Plug 'slim-template/vim-slim'
 call plug#end()
 
 " Directory Settings
@@ -127,11 +129,16 @@ nnoremap \r :write<CR>:QuickRun -mode n<CR>
 " for pandoc -> LiveReloadX -> chrome
 augroup pandoc
   autocmd!
-  autocmd Filetype markdown,html nmap \o :execute "OpenBrowser http://localhost:35729/" . expand("%:r") . ".html"<CR>
+  autocmd Filetype markdown,html,slim nmap \o :execute "OpenBrowser http://localhost:35729/" . expand("%:r") . ".html"<CR>
 augroup END
 let g:quickrun_config = {}
 let g:quickrun_config.markdown= {
       \ 'type': 'markdown/pandoc',
       \ 'exec' : ['pandoc %s -o %s:p:r.html'],
+      \ 'outputter': 'null'
+\}
+let g:quickrun_config.slim= {
+      \ 'command' : 'slimrb',
+      \ 'exec' : ['%c -p %s > %s:r.tmp', 'mv %s:r.tmp %s:r.html'],
       \ 'outputter': 'null'
 \}
