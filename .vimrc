@@ -120,9 +120,14 @@ let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
+" for pandoc -> LiveReloadX -> chrome
+augroup pandoc
+  autocmd!
+  autocmd Filetype markdown nmap \o :execute "OpenBrowser http://localhost:35729/" . expand("%:r") . ".html"<CR>
+augroup END
 let g:quickrun_config = {}
-let g:quickrun_config.mob= {
+let g:quickrun_config.markdown= {
       \ 'type': 'markdown/pandoc',
-      \ 'cmdopt': '-s -f markdown',
-      \ 'outputter': 'browser'
+      \ 'exec' : ['pandoc %s -o %s:p:r.html'],
+      \ 'outputter': 'null'
 \}
