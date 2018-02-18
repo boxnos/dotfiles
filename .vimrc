@@ -120,6 +120,10 @@ let g:netrw_nogx = 1 " disable netrw's gx mapping.
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
 
+" Quickurn
+let g:quickrun_no_default_key_mappings = 1
+nnoremap \r :write<CR>:QuickRun -mode n<CR>
+
 " for pandoc -> LiveReloadX -> chrome
 augroup pandoc
   autocmd!
