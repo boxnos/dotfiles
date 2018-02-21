@@ -40,6 +40,11 @@ set notimeout
 set ttimeout
 set timeoutlen=200
 
+" Clipboard
+if has('clipboard')
+  set clipboard=unnamedplus
+endif
+
 " Line Numbers
 set number
 
