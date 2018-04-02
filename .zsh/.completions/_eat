@@ -1,0 +1,3 @@
+#compdef eat
+
+_values 'description?' $(eat -l | tr '\n' ' ')
