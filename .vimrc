@@ -42,7 +42,8 @@ set timeoutlen=200
 
 " Clipboard
 if has('clipboard')
-  set clipboard=unnamedplus
+  set clipboard&
+  set clipboard^=unnamedplus
 endif
 
 " Line Numbers
