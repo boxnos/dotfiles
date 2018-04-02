@@ -20,6 +20,7 @@ bindkey "^[n" history-beginning-search-forward
 # Completion
 zstyle :compinstall filename '${ZDOTDIR}/.zshrc'
 
+fpath=(${ZDOTDIR}/.completions $fpath)
 autoload -Uz compinit
 compinit
 
