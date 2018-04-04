@@ -28,6 +28,9 @@ setopt auto_cd
 setopt auto_pushd
 setopt globdots
 
+# hash(private)
+source ${ZDOTDIR}/.hashes
+
 # Prompt
 PROMPT="%% "
 RPROMPT="[%~]"
