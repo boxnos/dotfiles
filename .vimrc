@@ -26,6 +26,10 @@ set confirm
 " History
 set history=10000
 
+" Undo
+set undodir=~/.vim/tmp/undo
+set undofile
+
 " Commandline mode behavior {{{
 set wildmode=longest,full
 
