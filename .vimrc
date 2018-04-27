@@ -1,3 +1,5 @@
+set nocompatible
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
