@@ -40,3 +40,6 @@ setopt transient_rprompt
 export ANYENV_ROOT=$HOME/.config/anyenv
 export PATH="$ANYENV_ROOT/bin:$PATH"
 eval "$(anyenv init -)"
+
+# aliases
+alias xd='od -Ax -tx1z'
