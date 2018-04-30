@@ -133,7 +133,7 @@ augroup QuickFix
 augroup END
 
 set errorformat&
-let &errorformat = 'make:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
+let &errorformat = 'make%.%#:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
 
 " Slim-vim
 let g:slime_target = "vimterminal"
