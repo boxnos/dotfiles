@@ -64,6 +64,9 @@ endif
 " Line Numbers
 set number
 
+" completion
+set omnifunc=syntaxcomplete#Complete
+
 " Status line {{{
 set showcmd
 set cmdheight=1
