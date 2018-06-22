@@ -56,8 +56,8 @@ endif
 
 setl lispwords=define,lambda,let,let*,letrec
 
-"setl lispwords+=and,or,if,cond,case
-setl lispwords+=begin,do,delay,set!,else,=>
+"setl lispwords+=and,or,if,cond,case,begin
+setl lispwords+=do,delay,set!,else,=>
 setl lispwords+=quote,quasiquote,unquote,unquote-splicing
 setl lispwords+=define-syntax,let-syntax,letrec-syntax,syntax-rules
 setl lispwords+=module,define-macro
