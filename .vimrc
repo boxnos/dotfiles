@@ -8,6 +8,7 @@ Plug 'w0ng/vim-hybrid'
 Plug 'tyru/open-browser.vim'
 Plug 'thinca/vim-quickrun'
 " Plug 'jpalardy/vim-slime'
+Plug 'digitaltoad/vim-pug'
 
 Plug 'slim-template/vim-slim'
 
