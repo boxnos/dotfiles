@@ -136,6 +136,11 @@ augroup QuickFix
   autocmd QuickfixCmdPost *grep*,make call s:Open_quickfix_window()
 augroup END
 
+augroup Make
+  autocmd!
+  autocmd FileType cpp nmap <F5> :w!<CR>:make<CR>
+augroup END
+
 set errorformat&
 let &errorformat = 'make%.%#:%.%#%[%f:%l:%m,' . &errorformat " for make (MAKESHIFT)
 
