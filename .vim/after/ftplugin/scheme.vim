@@ -44,7 +44,7 @@ endfunction
 
 if has("mzscheme")
 :mz << EOF
-(require (prefix-in vim- 'vimext))
+; (require (prefix-in vim- 'vimext))
 
 (require srfi/1)
 
