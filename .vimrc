@@ -56,6 +56,8 @@ set notimeout
 set ttimeout
 set timeoutlen=200
 
+set backspace=start
+
 " Clipboard
 if has('clipboard')
   set clipboard&
